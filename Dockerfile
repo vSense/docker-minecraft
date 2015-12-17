@@ -2,7 +2,7 @@ FROM alpine:3.2
 
 MAINTAINER <docker@vsense.fr> (@vsense)
 
-ENV VERSION 1.8.7
+ENV VERSION 1.8.9
 
 RUN apk --update add \
     openjdk7 \
