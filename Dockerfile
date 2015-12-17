@@ -18,13 +18,9 @@ USER minecraft
 
 WORKDIR /minecraft
 
-RUN java -Xms1G -Xmx1G -jar minecraft_server.jar nogui
-
 RUN sed -i -e 's/false/true/' eula.txt
 
 COPY server.properties /minecraft/server.properties
-
-RUN  chown -R minecraft:minecraft /minecraft
 
 VOLUME /minecraft
 
