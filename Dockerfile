@@ -24,6 +24,8 @@ RUN sed -i -e 's/false/true/' eula.txt
 
 COPY server.properties /minecraft/server.properties
 
+USER root
+
 RUN  chown -R minecraft:minecraft /minecraft
 
 VOLUME /minecraft
