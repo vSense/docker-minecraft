@@ -2,7 +2,7 @@ FROM vsense/baseimage:alpine
 
 MAINTAINER <docker@vsense.fr> (@vsense)
 
-ENV VERSION 1.8.9
+ENV VERSION 1.9.2
 
 RUN apk --update add \
     openjdk7 \
